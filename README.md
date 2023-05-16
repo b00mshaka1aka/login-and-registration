@@ -30,44 +30,6 @@ An example of Django project with basic user functionality.
 - Change profile
 - Multilingual: English, French, Russian, Simplified Chinese and Spanish
 
-If you need dynamic URLs with the language code, check out https://github.com/egorsmkv/simple-django-login-and-register-dynamic-lang
-
-## Installing
-
-### Clone the project
-
-```bash
-git clone https://github.com/egorsmkv/simple-django-login-and-register
-cd simple-django-login-and-register
-```
-
-### Install dependencies & activate virtualenv
-
-```bash
-pip install poetry
-
-poetry install
-poetry shell
-```
-
-### Configure the settings (connection to the database, connection to an SMTP server, and other options)
-
-1. Edit `source/app/conf/development/settings.py` if you want to develop the project.
-
-2. Edit `source/app/conf/production/settings.py` if you want to run the project in production.
-
-### Apply migrations
-
-```bash
-python source/manage.py migrate
-```
-
-### Collect static files (only on a production server)
-
-```bash
-python source/manage.py collectstatic
-```
-
 ### Running
 
 #### A development server
